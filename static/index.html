@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>5Letters</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script type="text/javascript" src="/static/functions.js"></script>
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+
+    <div class="popup-WinOverlay" style="display: none">
+        <div class="popup-WinContent">
+            <h2>Поздравляю, вы победили</h2>
+            <p>Если хотите поиграть еще, нажмите на кнопку</p>
+            <button onclick="reloadPage()">Играть</button>
+        </div>
+    </div>
+
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+    </tr>
+    <tr>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+    </tr>
+    <tr>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+    </tr>
+    <tr>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+    </tr>
+    <tr>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+    </tr>
+    <tr>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+    </tr>
+    <tr>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+        <td><input type="text" maxlength="1" /></td>
+    </tr>
+</table>
+<div class="container">
+    <div class="keyboard">
+        <div class="keyboard-row">
+            <button onclick="handleKey('Й')">Й</button>
+            <button onclick="handleKey('Ц')">Ц</button>
+            <button onclick="handleKey('У')">У</button>
+            <button onclick="handleKey('К')">К</button>
+            <button onclick="handleKey('Е')">Е</button>
+            <button onclick="handleKey('Н')">Н</button>
+            <button onclick="handleKey('Г')">Г</button>
+            <button onclick="handleKey('Ш')">Ш</button>
+            <button onclick="handleKey('Щ')">Щ</button>
+            <button onclick="handleKey('З')">З</button>
+            <button onclick="handleKey('Х')">Х</button>
+            <button onclick="handleKey('Ъ')">Ъ</button>
+            <button onclick="handleBackSpace()">←</button>
+        </div>
+        <div class="keyboard-row">
+            <button onclick="handleKey('Ф')">Ф</button>
+            <button onclick="handleKey('Ы')">Ы</button>
+            <button onclick="handleKey('В')">В</button>
+            <button onclick="handleKey('А')">А</button>
+            <button onclick="handleKey('П')">П</button>
+            <button onclick="handleKey('Р')">Р</button>
+            <button onclick="handleKey('О')">О</button>
+            <button onclick="handleKey('Л')">Л</button>
+            <button onclick="handleKey('Д')">Д</button>
+            <button onclick="handleKey('Ж')">Ж</button>
+            <button onclick="handleKey('Э')">Э</button>
+            <button onclick="handleEnter()">Enter</button>
+        </div>
+        <div class="keyboard-row">
+            <button onclick="handleKey('Я')">Я</button>
+            <button onclick="handleKey('Ч')">Ч</button>
+            <button onclick="handleKey('С')">С</button>
+            <button onclick="handleKey('М')">М</button>
+            <button onclick="handleKey('И')">И</button>
+            <button onclick="handleKey('Т')">Т</button>
+            <button onclick="handleKey('Ь')">Ь</button>
+            <button onclick="handleKey('Б')">Б</button>
+            <button onclick="handleKey('Ю')">Ю</button>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
