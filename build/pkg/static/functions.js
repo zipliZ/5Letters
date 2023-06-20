@@ -66,21 +66,21 @@ async function handleEnter(){
     let correctWord
     for (let i = 0; i < 5; i++) {
         let letterColor= responseData[i].split("/")
-            if (letterColor[1] === "-1"){
-                for (let j = start; j <end; j++) {
-                    inputs[j].style.backgroundColor = "red";
-                }
-                correctWord = false
-                break
+        if (letterColor[1] === "-1"){
+            for (let j = start; j <end; j++) {
+                inputs[j].style.backgroundColor = "red";
             }
-            if (letterColor[1] === "1"){
-                inputs[start+i].style.backgroundColor = "orange";
-            }else if (letterColor[1] === "2"){
-                inputs[start+i].style.backgroundColor = "green";
-            }else {
-                inputs[start+i].style.backgroundColor = "white";
-            }
-            correctWord = true
+            correctWord = false
+            break
+        }
+        if (letterColor[1] === "1"){
+            inputs[start+i].style.backgroundColor = "orange";
+        }else if (letterColor[1] === "2"){
+            inputs[start+i].style.backgroundColor = "green";
+        }else {
+            inputs[start+i].style.backgroundColor = "white";
+        }
+        correctWord = true
     }
     for (let r of responseData) {
         let letterInfo = r.split("/")
@@ -89,9 +89,11 @@ async function handleEnter(){
             break
         }
         CompleteGame = true
+
+    }
+    if (CompleteGame){
         document.querySelector('.popup-WinOverlay').style.display = 'flex';
     }
-
     if (correctWord){
         Row+=1
     }
